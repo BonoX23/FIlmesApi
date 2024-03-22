@@ -25,3 +25,7 @@
 /home/bonox23/Documentos/GitHub/EntityFramework/FIlmesApi/FilmesApi/obj/Debug/net6.0/FilmesApi.pdb
 /home/bonox23/Documentos/GitHub/EntityFramework/FIlmesApi/FilmesApi/obj/Debug/net6.0/FilmesApi.genruntimeconfig.cache
 /home/bonox23/Documentos/GitHub/EntityFramework/FIlmesApi/FilmesApi/obj/Debug/net6.0/ref/FilmesApi.dll
+/home/bonox23/Documentos/GitHub/EntityFramework/FIlmesApi/FilmesApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/home/bonox23/Documentos/GitHub/EntityFramework/FIlmesApi/FilmesApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/bonox23/Documentos/GitHub/EntityFramework/FIlmesApi/FilmesApi/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/home/bonox23/Documentos/GitHub/EntityFramework/FIlmesApi/FilmesApi/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
