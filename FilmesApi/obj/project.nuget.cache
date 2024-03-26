@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NUHALq08tyFaFTVIwHyux3s+fUyuuUnfjq6SkVDE7opeyv/nQrxnxR5zT6wOsPVED0s2BWujrox3TtLii6RNAQ==",
+  "dgSpecHash": "YV9syf1o7nacEkeYPMCXEJQ34+FmXXx0Z0nlxFoVfO52tQ4VCPMknhW+q/52w05Bexy+uY2BuyWRCeBrim863w==",
   "success": true,
   "projectFilePath": "/home/bonox23/Documentos/GitHub/EntityFramework/FIlmesApi/FilmesApi/FilmesApi.csproj",
   "expectedPackageFiles": [
+    "/home/bonox23/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/home/bonox23/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "/home/bonox23/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/home/bonox23/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/bonox23/.nuget/packages/microsoft.entityframeworkcore/6.0.10/microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
     "/home/bonox23/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.10/microsoft.entityframeworkcore.abstractions.6.0.10.nupkg.sha512",
     "/home/bonox23/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.10/microsoft.entityframeworkcore.analyzers.6.0.10.nupkg.sha512",
