@@ -39,6 +39,13 @@ public class FilmeController : ControllerBase
             filme);
     }
 
+    /// <summary>
+    /// Recupera uma lista de filmes do banco de dados
+    /// </summary>
+    /// <param name="skip">Número de filmes que serão pulados</param>
+    /// <param name="take">Número de filmes que serão recuperados</param>
+    /// <returns>Informações dos filmes buscados</returns>
+    /// <response code="200">Com a lista de filmes presentes na base de dados</response>
     // Skip e take são para paginacao
     [HttpGet]
     public IEnumerable<ReadFilmeDto> RecuperaFilmes([FromQuery] int skip = 0,
@@ -47,6 +54,13 @@ public class FilmeController : ControllerBase
         return _mapper.Map<List<ReadFilmeDto>>(_context.Filmes.Skip(skip).Take(take));
     }
 
+    /// <summary>
+    /// Recupera um filme no banco de dados usando seu id
+    /// </summary>
+    /// <param name="id">Id do filme a ser recuperado no banco</param>
+    /// <returns>Informações do filme buscado</returns>
+    /// <response code="200">Caso o id seja existente na base de dados</response>
+    /// <response code="404">Caso o id seja inexistente na base de dados</response>
     // IActionResult trás o resultado de uma ação que foi executada
     [HttpGet("{id}")]
     public IActionResult RecuperaFilmesporId(int id)
@@ -57,6 +71,14 @@ public class FilmeController : ControllerBase
         return Ok(filmeDto);
     }
 
+    /// <summary>
+    /// Atualiza um filme no banco de dados usando seu id
+    /// </summary>
+    /// <param name="id">Id do filme a ser atualizado no banco</param>
+    /// <param name="filmeDto">Objeto com os campos necessários para atualização de um filme</param>
+    /// <returns>Sem conteúdo de retorno</returns>
+    /// <response code="204">Caso o id seja existente na base de dados e o filme tenha sido atualizado</response>
+    /// <response code="404">Caso o id seja inexistente na base de dados</response>
     [HttpPut("{id}")]
     public IActionResult AtualizaFilme(int id,
         [FromBody] UpdateFilmeDto filmeDto)
@@ -90,6 +112,13 @@ public class FilmeController : ControllerBase
         return NoContent();
     }
 
+    /// <summary>
+    /// Deleta um filme do banco de dados usando seu id
+    /// </summary>
+    /// <param name="id">Id do filme a ser removido do banco</param>
+    /// <returns>Sem conteúdo de retorno</returns>
+    /// <response code="204">Caso o id seja existente na base de dados e o filme tenha sido removido</response>
+    /// <response code="404">Caso o id seja inexistente na base de dados</response>
     [HttpDelete("{id}")]
     public IActionResult DeletaFilme(int id)
     {
